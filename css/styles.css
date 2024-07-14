@@ -335,6 +335,7 @@ section {
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
+    min-height: 25vh;
 }
 
 .experience-box {
@@ -392,7 +393,8 @@ section {
 }*/
 
 .contact {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
+    min-height: 50vh;
 }
 
 .contact h2 {
@@ -400,6 +402,45 @@ section {
     color: var(--text-color);
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    color: black;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 2rem; /* Adds space between buttons */
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+
+.contact-text {
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+/*
 .contact form {
     display: flex;
     align-items: center;
@@ -421,6 +462,7 @@ section {
     margin: 1.5rem;
     resize: none;
 }
+*/
 
 .footer {
     background-color: var(--bg-color);
@@ -504,8 +546,5 @@ section {
     }
     .about img {
         width: 52vw;
-    }
-    .contact form {
-        flex-direction: column;
     }
 }
